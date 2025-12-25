@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("/images/note.jpg");
+       font-family: 'Montserrat', sans-serif;
+       line-height: 1.6;
+       background-color: #f3f4ed;
+       color: rgba(63, 8, 200, 0.695)
+    
+    
+}
