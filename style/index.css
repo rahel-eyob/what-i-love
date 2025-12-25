@@ -4,11 +4,168 @@
     padding: 0;
 }
 body{
-    background-image: url("/images/note.jpg");
+    background-image: url("/images/music.jpg");
        font-family: 'Montserrat', sans-serif;
        line-height: 1.6;
        background-color: #f3f4ed;
-       color: rgba(63, 8, 200, 0.695)
+         color:rgb(245, 245, 245);
     
     
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(97, 67, 77);
+    color: rgb(194, 194, 223);
+    padding: 1rem;
+    text-align: center;
+   
+
+}
+nav a{
+     color: #eaeaea;
+    margin: 1rem;
+    text-decoration: none;
+      transition: 0.3s;
+
+}
+h3{
+    background-color: rgb(222, 222, 198);
+    box-sizing: content-box;
+    
+}
+.hero{
+    background-color: rgb(194, 201, 181);
+    padding: 2rem;
+    text-align: center;
+
+}
+.why{
+    max-width: 700px;
+    margin: 2rem auto;
+    background-color: rgb(120, 97, 175);
+    padding:1.8rem ;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgb(120, 97, 175);
+}
+.why h3{
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+ .why ul{
+    list-style-type: disc ;
+    padding-left: 2rem; 
+ }
+ .why li{
+    margin-bottom: 0.7rem;
+    line-height: 1.7;
+ }
+ .favorite-artist{
+    max-width: 700px;
+    margin: 2rem auto;
+    background-color: rgb(120, 97,175);
+    padding: 1.5;
+    border-radius: 6px;
+   box-shadow: 0 0 10px rgb(120, 97, 175);
+
+ }
+ .favorite-artist h3{
+    font-size: 1.5rem;
+    color:#601d1d;
+    margin-bottom: 1rem;
+    text-align: center;
+
+ }
+ .favorite-artist ol{
+    list-style: georgian;
+    padding-left: 2rem;
+    color:#f3eded ;
+ }
+ body{
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f3f4ed;
+    margin: 0;
+    padding: 20px;
+ }
+ .music-geeners{
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+  ;
+ }
+ .music-geeners h3{
+    color: #601d1d;
+    text-align: left;
+    margin-bottom: 1rem;
+ }
+ .music-geeners input [type="radio"]{
+  display: none;
+    
+ }
+.music-geeners label{
+    display: inline;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #6651c1;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+.music-geeners label:hover{
+    background-color: #bc0d0d;
+}
+.song{
+  margin-top: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+}
+.song{
+    display: none;
+  margin-top: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.song img{
+    width: 350px;
+    border-radius: 6px;
+    box-shadow: 0 4px rgba(0,0,0,0.1);
+    
+}
+/* Show selected genre's music */
+#pop:checked ~ .pop-songs,
+#tizita:checked ~ .tizita-songs,
+#hiphop:checked ~ .hiphop-songs,
+#ethio-jazz:checked ~ .jazz-songs {
+  display: flex;
+}
+ {
+  display: flex;
+}
+/* Responsive layout for phones */
+@media (max-width: 600px) {
+  .genre-selector label {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    font-size: 1em;
+  }
+  .song{
+    flex-direction:column ;
+    align-items: center;
+  }
+  .song img{
+    width: 80%;
+    max-width: 250px;
+
+  }
+}
+footer{
+    text-align: center;
+    background-color: #601d1d;
 }
