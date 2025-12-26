@@ -1,0 +1,124 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Navbar */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  background-color: #e9c7c7dd;
+  color: #374151;
+  padding: 1rem;
+  text-align: center;
+
+   
+}
+nav {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 14px 18px;
+  display: flex;
+  gap: 18px;
+
+}
+nav a {
+  text-decoration: none;
+  color: #7f25ce;
+  font-weight: 600;
+  transition: color .2s ease, transform .2s ease;
+  
+}
+/* Page heading */
+.contact-here {
+  text-align: center;
+  padding: 25px 10px 10px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  color: #aa63a9;
+}
+/* Form card */
+.contact-form {
+  max-width: 520px;
+  margin: 20px auto 60px;
+  background: #a775f2d9;
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 26px 24px 30px;
+  box-shadow: 0 14px 28px rgba(176, 83, 83, 0.08)
+}
+/* Labels + Inputs */
+.contact-form label {
+  display:block;
+  margin: 6px 0 4px;
+  font-size: 1rem;
+  color: #374151;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"]
+.contact-form textarea
+{
+
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  
+  font-size: .95rem;
+  transition: border .3s ease, box-shadow .2s ease;
+}
+#Message{
+    width: 100%;
+    border: 1px solid #0e3a7d;
+    transition: border .3s ease, box-shadow .2s ease;
+}
+#Message h3{
+color: #010409;
+}
+#email{
+    width: 100%;
+    border-radius: 8px;
+    height: 2rem;
+    border: 1px solid #0e3a7d;
+    transition: border .3s ease, box-shadow .2s ease;
+}
+input:focus, textarea:focus{
+    outline: 2px solid #13610c;
+}
+label h3{
+    color: #010409;
+}
+
+/* Submit button */
+.contact-form button {
+  margin-top: 18px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 18px;
+  border: none;
+  font-weight: 800;
+  background: linear-gradient(90deg, #7c3aed, #a855f7);
+  color: rgb(184, 164, 164);
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+}
+button::after{
+    content: icon;
+    margin-left: 5px;
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0 26px;
+  font-size: .9rem;
+  color: #6d35a9;
+  background-color: #6e93d1;
+  font-weight: 800;
+}
