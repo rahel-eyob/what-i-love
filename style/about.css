@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+ padding: 0;
+  margin: 0;
+}
+body{
+    background-image: url(/images/88.jpg);
+    font-family: sans-serif;
+     line-height: 1.6;
+    background-color: #f30404;
+    color: #aad68b;
+
+}
+header{
+    background-color:#333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+nav a{
+    color: rgb(210, 103, 103);
+    margin: 0 1rem;
+    text-decoration: none;
+}
+h2,p{
+    background-color:rgb(6, 124, 126);
+    padding: 2rem;
+    text-align: center;}
+    .Myfav{
+        padding: 40px 20px;
+        background-color: #fefefe;
+        text-align: center;
+    }
+    .artist-row{
+         display: flex;
+  flex-wrap: wrap;
+  justify-content:center
+   ;
+  gap: 50px;
+    }
+    .artist-card{
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  width: 250px; /* optional fixed width */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(96, 21, 176, 0.1);
+  transition: transform 0.3s ease;
+    }
+    .artist-card:hover{
+        transition: transform 0.3s ease;
+
+    }
+    .artist-card img{
+        width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+
+    }
+    .artist-card h3,.artist-card p{
+        margin-top: 15px;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;  
+    }
+    /*Table*/
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background-color: #f5f6f4;
+    }
+    th,td{
+        border: 1px solid #f1dcdc;
+        padding: 10px;
+        text-align: left;
+    }
+    th{
+        background-color: #333;
+        font-weight: bold;
+    }
+    footer{
+     text-align: center;
+     background-color: #333;
+     color: #c17f7f;
+    }
